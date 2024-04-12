@@ -78,14 +78,6 @@ public class EndTemplates {
                     List.of(SmithingTemplates.EMPTY_SLOT_INGOT)
             );
 
-    public static final SmithingTemplateItem TERMINITE_UPGRADE = EndItems
-            .getItemRegistry()
-            .registerSmithingTemplateItem(
-                    BetterEnd.makeID("terminite_upgrade"),
-                    List.of(EMPTY_SLOT_ANVIL, EMPTY_SLOT_STICK),
-                    List.of(SmithingTemplates.EMPTY_SLOT_INGOT)
-            );
-
 
     public static final SmithingTemplateItem NETHERITE_UPGRADE = EndItems
             .getItemRegistry()

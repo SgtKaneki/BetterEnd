@@ -49,18 +49,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "got_terminite": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "betterend:terminite_upgrade_smithing_template"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "got_thallasium": {
       "conditions": {
         "items": [
@@ -113,9 +101,6 @@
     ],
     [
       "got_plate"
-    ],
-    [
-      "got_terminite"
     ],
     [
       "got_thallasium"

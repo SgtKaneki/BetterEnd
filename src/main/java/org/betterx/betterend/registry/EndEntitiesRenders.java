@@ -25,11 +25,6 @@ public class EndEntitiesRenders {
     public static final ModelLayerLocation TEST_MODEL = registerMain("test");
 
     public static final ModelLayerLocation ARMORED_ELYTRA = registerMain("armored_elytra");
-    public static final ModelLayerLocation CRYSTALITE_CHESTPLATE = registerMain("crystalite_chestplate");
-    public static final ModelLayerLocation CRYSTALITE_CHESTPLATE_THIN = registerMain("crystalite_chestplate_thin");
-    public static final ModelLayerLocation CRYSTALITE_HELMET = registerMain("crystalite_helmet");
-    public static final ModelLayerLocation CRYSTALITE_LEGGINGS = registerMain("crystalite_leggings");
-    public static final ModelLayerLocation CRYSTALITE_BOOTS = registerMain("crystalite_boots");
 
     public static void register() {
         register(EndEntities.DRAGONFLY.type(), RendererEntityDragonfly::new);
@@ -48,19 +43,6 @@ public class EndEntitiesRenders {
         EntityModelLayerRegistry.registerModelLayer(END_FISH_MODEL, EndFishEntityModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(CUBOZOA_MODEL, CubozoaEntityModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(SILK_MOTH_MODEL, SilkMothEntityModel::getTexturedModelData);
-
-        EntityModelLayerRegistry.registerModelLayer(ARMORED_ELYTRA, ArmoredElytraModel::getTexturedModelData);
-        EntityModelLayerRegistry.registerModelLayer(
-                CRYSTALITE_CHESTPLATE,
-                CrystaliteChestplateModel::getRegularTexturedModelData
-        );
-        EntityModelLayerRegistry.registerModelLayer(
-                CRYSTALITE_CHESTPLATE_THIN,
-                CrystaliteChestplateModel::getThinTexturedModelData
-        );
-        EntityModelLayerRegistry.registerModelLayer(CRYSTALITE_HELMET, CrystaliteHelmetModel::getTexturedModelData);
-        EntityModelLayerRegistry.registerModelLayer(CRYSTALITE_LEGGINGS, CrystaliteLeggingsModel::getTexturedModelData);
-        EntityModelLayerRegistry.registerModelLayer(CRYSTALITE_BOOTS, CrystaliteBootsModel::getTexturedModelData);
     }
 
     private static void register(EntityType<?> type, Function<Context, MobRenderer> renderer) {

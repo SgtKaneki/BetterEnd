@@ -2,7 +2,6 @@ package org.betterx.betterend.mixin.common;
 
 import org.betterx.betterend.BetterEnd;
 import org.betterx.betterend.interfaces.MobEffectApplier;
-import org.betterx.betterend.item.CrystaliteArmor;
 import org.betterx.betterend.registry.EndAttributes;
 
 import net.minecraft.world.damagesource.DamageSource;
@@ -45,21 +44,6 @@ public abstract class LivingEntityMixin extends Entity {
     @Inject(method = "createLivingAttributes", at = @At("RETURN"), cancellable = true)
     private static void be_addLivingAttributes(CallbackInfoReturnable<AttributeSupplier.Builder> info) {
         EndAttributes.addLivingEntityAttributes(info.getReturnValue());
-    }
-
-    @Inject(method = "tickEffects", at = @At("HEAD"))
-    protected void be_applyEffects(CallbackInfo info) {
-        if (!level().isClientSide()) {
-            LivingEntity owner = LivingEntity.class.cast(this);
-            if (CrystaliteArmor.hasFullSet(owner)) {
-                CrystaliteArmor.applySetEffect(owner);
-            }
-            getArmorSlots().forEach(itemStack -> {
-                if (itemStack.getItem() instanceof MobEffectApplier) {
-                    ((MobEffectApplier) itemStack.getItem()).applyEffect(owner);
-                }
-            });
-        }
     }
 
     @Inject(method = "canBeAffected", at = @At("HEAD"), cancellable = true)

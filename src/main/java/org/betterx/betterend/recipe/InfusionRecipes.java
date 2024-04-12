@@ -32,51 +32,6 @@ public class InfusionRecipes {
                       .setTime(250)
                       .build();
 
-        InfusionRecipe.create("crystalite_helmet", EndItems.CRYSTALITE_HELMET)
-                      .setPrimaryInputAndUnlock(EndBlocks.TERMINITE.helmet)
-                      .addCatalyst(InfusionRecipe.Catalysts.NORTH, EndItems.AMBER_GEM)
-                      .addCatalyst(InfusionRecipe.Catalysts.EAST, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.WEST, EndItems.CRYSTAL_SHARDS)
-                      .setTime(150)
-                      .build();
-        InfusionRecipe.create("crystalite_chestplate", EndItems.CRYSTALITE_CHESTPLATE)
-                      .setPrimaryInputAndUnlock(EndBlocks.TERMINITE.chestplate)
-                      .addCatalyst(InfusionRecipe.Catalysts.NORTH, EndItems.AMBER_GEM)
-                      .addCatalyst(InfusionRecipe.Catalysts.NORTH_EAST, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.SOUTH_EAST, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.SOUTH_WEST, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.NORTH_WEST, EndItems.CRYSTAL_SHARDS)
-                      .setTime(300)
-                      .build();
-        InfusionRecipe.create("crystalite_leggings", EndItems.CRYSTALITE_LEGGINGS)
-                      .setPrimaryInputAndUnlock(EndBlocks.TERMINITE.leggings)
-                      .addCatalyst(InfusionRecipe.Catalysts.NORTH, EndItems.AMBER_GEM)
-                      .addCatalyst(InfusionRecipe.Catalysts.EAST, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.SOUTH, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.WEST, EndItems.CRYSTAL_SHARDS)
-                      .setTime(225)
-                      .build();
-        InfusionRecipe.create("crystalite_boots", EndItems.CRYSTALITE_BOOTS)
-                      .setPrimaryInputAndUnlock(EndBlocks.TERMINITE.boots)
-                      .addCatalyst(InfusionRecipe.Catalysts.NORTH, EndItems.AMBER_GEM)
-                      .addCatalyst(InfusionRecipe.Catalysts.EAST, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.WEST, EndItems.CRYSTAL_SHARDS)
-                      .setTime(150)
-                      .build();
-
-        InfusionRecipe.create("crystalite_elytra", EndItems.CRYSTALITE_ELYTRA)
-                      .setPrimaryInputAndUnlock(Items.ELYTRA)
-                      .addCatalyst(InfusionRecipe.Catalysts.NORTH, EndItems.AMBER_GEM)
-                      .addCatalyst(InfusionRecipe.Catalysts.NORTH_EAST, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.EAST, EndItems.ENCHANTED_MEMBRANE)
-                      .addCatalyst(InfusionRecipe.Catalysts.SOUTH_EAST, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.SOUTH, EndItems.ENCHANTED_MEMBRANE)
-                      .addCatalyst(InfusionRecipe.Catalysts.SOUTH_WEST, EndItems.CRYSTAL_SHARDS)
-                      .addCatalyst(InfusionRecipe.Catalysts.WEST, EndItems.ENCHANTED_MEMBRANE)
-                      .addCatalyst(InfusionRecipe.Catalysts.NORTH_WEST, EndItems.CRYSTAL_SHARDS)
-                      .setTime(500)
-                      .build();
-
         InfusionRecipe.create("enchanted_petal", EndItems.ENCHANTED_PETAL)
                       .setPrimaryInputAndUnlock(EndItems.HYDRALUX_PETAL)
                       .addCatalyst(InfusionRecipe.Catalysts.NORTH, EndItems.CRYSTAL_SHARDS)

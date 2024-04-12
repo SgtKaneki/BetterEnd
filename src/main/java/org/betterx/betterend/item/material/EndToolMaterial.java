@@ -13,8 +13,6 @@ import java.util.function.Supplier;
 public enum EndToolMaterial implements Tier {
     THALLASIUM(Tiers.IRON.getLevel(), 320, 7.0F, 1.5F, 12, () -> {
         return Ingredient.of(EndBlocks.THALLASIUM.ingot);
-    }), TERMINITE(Tiers.DIAMOND.getLevel(), 1230, 8.5F, 3.0F, 14, () -> {
-        return Ingredient.of(EndBlocks.TERMINITE.ingot);
     });
 
     private final int durability;

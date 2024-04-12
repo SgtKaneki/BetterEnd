@@ -157,8 +157,6 @@ public class EndChestLootTableProvider extends SimpleFabricLootTableProvider {
         return LootPool
                 .lootPool()
                 .setRolls(ConstantValue.exactly(1))
-                .add(LootItem.lootTableItem(EndBlocks.TERMINITE.swordBlade))
-                .add(LootItem.lootTableItem(EndBlocks.TERMINITE.forgedPlate))
                 .add(LootItem.lootTableItem(EndBlocks.MENGER_SPONGE))
                 .add(LootItem.lootTableItem(Items.BOW)
                              .apply(SetItemDamageFunction.setDamage(UniformGenerator.between(0.0F, 0.25F)))
@@ -228,11 +226,6 @@ public class EndChestLootTableProvider extends SimpleFabricLootTableProvider {
                 .add(LootItem
                         .lootTableItem(EndTemplates.THALLASIUM_UPGRADE)
                         .setWeight(8)
-                        .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1)))
-                )
-                .add(LootItem
-                        .lootTableItem(EndTemplates.TERMINITE_UPGRADE)
-                        .setWeight(4)
                         .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1)))
                 )
                 .add(LootItem
@@ -399,7 +392,6 @@ public class EndChestLootTableProvider extends SimpleFabricLootTableProvider {
 
         builder = LootPool.lootPool();
         builder.setRolls(UniformGenerator.between(2, 4));
-        builder.add(LootItem.lootTableItem(EndBlocks.TERMINITE.ingot));
         builder.add(LootItem.lootTableItem(EndItems.ENDER_SHARD));
         builder.add(LootItem.lootTableItem(EndBlocks.AURORA_CRYSTAL));
         builder.add(LootItem.lootTableItem(EndBlocks.THALLASIUM.axe));

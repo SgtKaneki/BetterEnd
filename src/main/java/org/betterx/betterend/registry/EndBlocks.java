@@ -660,16 +660,6 @@ public class EndBlocks {
             EndTemplates.THALLASIUM_UPGRADE
     );
 
-    public static final MetalMaterial TERMINITE = MetalMaterial.makeOreless(
-            "terminite",
-            MapColor.WARPED_WART_BLOCK,
-            7F,
-            9F,
-            EndToolMaterial.TERMINITE,
-            EndArmorMaterial.TERMINITE,
-            EndToolMaterial.TERMINITE.getLevel(),
-            EndTemplates.TERMINITE_UPGRADE
-    );
     public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block", new CharcoalBlock());
 
     public static final Block ENDER_BLOCK = registerBlock("ender_block", new EnderBlock());

@@ -142,7 +142,6 @@ public class EndAdvancementDataProvider extends AdvancementDataProvider {
                 .addInventoryChangedAnyCriterion("got_tool", EndTemplates.TOOL_ASSEMBLY)
                 .addInventoryChangedAnyCriterion("got_leather", EndTemplates.LEATHER_HANDLE_ATTACHMENT)
                 .addInventoryChangedAnyCriterion("got_plate", EndTemplates.PLATE_UPGRADE)
-                .addInventoryChangedAnyCriterion("got_terminite", EndTemplates.TERMINITE_UPGRADE)
                 .addInventoryChangedAnyCriterion("got_thallasium", EndTemplates.THALLASIUM_UPGRADE)
                 .addInventoryChangedAnyCriterion("got_netherite", EndTemplates.NETHERITE_UPGRADE)
                 .requirements(RequirementsStrategy.AND)
@@ -167,24 +166,6 @@ public class EndAdvancementDataProvider extends AdvancementDataProvider {
                 .requirements(RequirementsStrategy.OR)
                 .build();
 
-        ResourceLocation terminiteAnvil = AdvancementManager.Builder
-                .create(BetterEnd.makeID("terminite_anvil"))
-                .parent(thallasiumAnvil)
-                .startDisplay(EndBlocks.TERMINITE.anvilBlock)
-                .endDisplay()
-                .addInventoryChangedCriterion("got_terminite_anvil", EndBlocks.TERMINITE.anvilBlock)
-                .requirements(RequirementsStrategy.OR)
-                .build();
-
-        ResourceLocation terminitePlate = AdvancementManager.Builder
-                .create(BetterEnd.makeID("terminite_plate"))
-                .parent(terminiteAnvil)
-                .startDisplay(EndBlocks.TERMINITE.forgedPlate)
-                .endDisplay()
-                .addInventoryChangedCriterion("got_erminite_plate", EndBlocks.TERMINITE.forgedPlate)
-                .requirements(RequirementsStrategy.OR)
-                .build();
-
         ResourceLocation thallasiumArmor = addArmor(EndBlocks.THALLASIUM)
                 .parent(thallasiumPlate)
                 .requirements(RequirementsStrategy.OR)
@@ -197,21 +178,6 @@ public class EndAdvancementDataProvider extends AdvancementDataProvider {
 
         ResourceLocation thallasium = addTools(EndBlocks.THALLASIUM)
                 .parent(thallasiumHead)
-                .requirements(RequirementsStrategy.OR)
-                .build();
-
-        ResourceLocation terminiteHead = addToolHeads(EndBlocks.TERMINITE)
-                .parent(terminiteAnvil)
-                .requirements(RequirementsStrategy.OR)
-                .build();
-
-        ResourceLocation terminite = addTools(EndBlocks.TERMINITE)
-                .parent(terminiteHead)
-                .requirements(RequirementsStrategy.OR)
-                .build();
-
-        ResourceLocation terminiteArmor = addArmor(EndBlocks.TERMINITE)
-                .parent(terminitePlate)
                 .requirements(RequirementsStrategy.OR)
                 .build();
     }

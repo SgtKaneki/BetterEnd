@@ -54,10 +54,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "betterend:terminite_ingot"
-        },
-        {
-          "type": "minecraft:item",
           "name": "betterend:ender_shard"
         },
         {

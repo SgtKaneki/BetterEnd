@@ -206,18 +206,6 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "betterend:terminite_upgrade_smithing_template",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "betterend:netherite_upgrade_smithing_template",
           "weight": 8
         }

@@ -93,7 +93,6 @@ public class LootTableUtil {
                         .add(LootItem.lootTableItem(EndTemplates.LEATHER_HANDLE_ATTACHMENT).setWeight(1))
                         .add(LootItem.lootTableItem(EndTemplates.TOOL_ASSEMBLY).setWeight(1))
                         .add(LootItem.lootTableItem(EndTemplates.THALLASIUM_UPGRADE).setWeight(2))
-                        .add(LootItem.lootTableItem(EndTemplates.TERMINITE_UPGRADE).setWeight(2))
                 );
             } else if (BuiltInLootTables.FISHING.equals(id)) {
                 table.modifyPools((modifier) -> modifier.when(IN_END.invert()));
