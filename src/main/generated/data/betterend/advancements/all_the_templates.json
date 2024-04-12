@@ -1,18 +1,6 @@
 {
   "parent": "betterend:enter_end",
   "criteria": {
-    "got_aeternium": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "betterend:aeternium_upgrade_smithing_template"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "got_handle": {
       "conditions": {
         "items": [
@@ -128,9 +116,6 @@
     ],
     [
       "got_terminite"
-    ],
-    [
-      "got_aeternium"
     ],
     [
       "got_thallasium"

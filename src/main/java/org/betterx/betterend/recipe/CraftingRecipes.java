@@ -61,18 +61,6 @@ public class CraftingRecipes {
                         .addMaterial('Y', Items.ENDER_EYE)
                         .addMaterial('#', Blocks.OBSIDIAN)
                         .build();
-
-        String material = "aeternium";
-        BCLRecipeBuilder.crafting(BetterEnd.makeID(material + "_block"), EndBlocks.AETERNIUM_BLOCK)
-                        .setShape("III", "III", "III")
-                        .addMaterial('I', EndItems.AETERNIUM_INGOT)
-                        .build();
-        BCLRecipeBuilder.crafting(BetterEnd.makeID(material + "_block_to_ingot"), EndItems.AETERNIUM_INGOT)
-                        .addMaterial('#', EndBlocks.AETERNIUM_BLOCK)
-                        .setOutputCount(9)
-                        .shapeless()
-                        .build();
-
         BCLRecipeBuilder.crafting(BetterEnd.makeID("blue_vine_seed_dye"), Items.BLUE_DYE)
                         .shapeless()
                         .addMaterial('#', EndBlocks.BLUE_VINE_SEED)
@@ -336,10 +324,6 @@ public class CraftingRecipes {
                         )
                         .addMaterial('P', Blocks.PURPUR_BLOCK)
                         .build();
-
-        registerHammer("iron", Items.IRON_INGOT, EndItems.IRON_HAMMER);
-        registerHammer("golden", Items.GOLD_INGOT, EndItems.GOLDEN_HAMMER);
-        registerHammer("diamond", Items.DIAMOND, EndItems.DIAMOND_HAMMER);
 
         BCLRecipeBuilder.crafting(BetterEnd.makeID("charcoal_block"), EndBlocks.CHARCOAL_BLOCK)
                         .setShape("###", "###", "###")

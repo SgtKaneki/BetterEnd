@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "betterend:aeternium_anvil",
-    "betterend:aeternium_block",
     "betterend:amber_block",
     "betterend:amber_moss",
     "betterend:amber_moss_path",

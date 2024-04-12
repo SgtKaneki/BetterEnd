@@ -410,7 +410,7 @@
     "frame": "challenge",
     "hidden": false,
     "icon": {
-      "item": "betterend:aeternium_boots",
+      "item": "betterend:emerald_boots",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,

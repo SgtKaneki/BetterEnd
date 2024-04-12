@@ -670,7 +670,6 @@ public class EndBlocks {
             EndToolMaterial.TERMINITE.getLevel(),
             EndTemplates.TERMINITE_UPGRADE
     );
-    public static final Block AETERNIUM_BLOCK = registerBlock("aeternium_block", new AeterniumBlock());
     public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block", new CharcoalBlock());
 
     public static final Block ENDER_BLOCK = registerBlock("ender_block", new EnderBlock());
@@ -741,7 +740,6 @@ public class EndBlocks {
     public static final Block END_STONE_SMELTER = registerBlock("end_stone_smelter", new EndStoneSmelter());
     public static final Block ETERNAL_PEDESTAL = registerBlock("eternal_pedestal", new EternalPedestal());
     public static final Block INFUSION_PEDESTAL = registerBlock("infusion_pedestal", new InfusionPedestal());
-    public static final Block AETERNIUM_ANVIL = registerBlock("aeternium_anvil", new AeterniumAnvil());
 
     // Technical
     public static final Block END_PORTAL_BLOCK = registerEndBlockOnly("end_portal_block", new EndPortalBlock());

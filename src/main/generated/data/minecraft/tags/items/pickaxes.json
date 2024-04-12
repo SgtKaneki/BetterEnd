@@ -1,8 +1,5 @@
 {
   "replace": false,
   "values": [
-    "betterend:aeternium_pickaxe",
-    "betterend:terminite_pickaxe",
-    "betterend:thallasium_pickaxe"
   ]
 }

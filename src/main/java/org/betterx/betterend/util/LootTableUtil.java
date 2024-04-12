@@ -92,7 +92,6 @@ public class LootTableUtil {
                         .add(LootItem.lootTableItem(EndTemplates.HANDLE_ATTACHMENT).setWeight(2))
                         .add(LootItem.lootTableItem(EndTemplates.LEATHER_HANDLE_ATTACHMENT).setWeight(1))
                         .add(LootItem.lootTableItem(EndTemplates.TOOL_ASSEMBLY).setWeight(1))
-                        .add(LootItem.lootTableItem(EndTemplates.AETERNIUM_UPGRADE).setWeight(1))
                         .add(LootItem.lootTableItem(EndTemplates.THALLASIUM_UPGRADE).setWeight(2))
                         .add(LootItem.lootTableItem(EndTemplates.TERMINITE_UPGRADE).setWeight(2))
                 );

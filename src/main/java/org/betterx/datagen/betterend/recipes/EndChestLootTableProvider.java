@@ -236,11 +236,6 @@ public class EndChestLootTableProvider extends SimpleFabricLootTableProvider {
                         .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1)))
                 )
                 .add(LootItem
-                        .lootTableItem(EndTemplates.AETERNIUM_UPGRADE)
-                        .setWeight(2)
-                        .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1)))
-                )
-                .add(LootItem
                         .lootTableItem(EndTemplates.NETHERITE_UPGRADE)
                         .setWeight(8)
                         .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1)))
@@ -289,11 +284,6 @@ public class EndChestLootTableProvider extends SimpleFabricLootTableProvider {
         return LootPool
                 .lootPool()
                 .setRolls(UniformGenerator.between(1, 2))
-                .add(LootItem
-                        .lootTableItem(EndItems.AETERNIUM_INGOT)
-                        .setWeight(8)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4)))
-                )
                 .add(LootItem
                         .lootTableItem(EndBlocks.FLAVOLITE_RUNED_ETERNAL)
                         .setWeight(4)
@@ -424,7 +414,6 @@ public class EndChestLootTableProvider extends SimpleFabricLootTableProvider {
         builder = LootPool.lootPool();
         builder.setRolls(UniformGenerator.between(0, 4));
         builder.add(LootItem.lootTableItem(EndBlocks.FLAVOLITE_RUNED));
-        builder.add(LootItem.lootTableItem(EndItems.AETERNIUM_INGOT));
         builder.add(LootItem.lootTableItem(EndItems.AMBER_GEM));
         builder.add(LootItem.lootTableItem(Items.END_CRYSTAL));
         builder.add(LootItem.lootTableItem(Items.GHAST_TEAR));

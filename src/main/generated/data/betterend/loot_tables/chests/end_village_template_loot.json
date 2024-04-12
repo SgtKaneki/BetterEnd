@@ -218,18 +218,6 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "betterend:aeternium_upgrade_smithing_template",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "betterend:netherite_upgrade_smithing_template",
           "weight": 8
         }

@@ -38,12 +38,6 @@ public class AlloyingRecipes {
                         .setExperience(2.5F)
                         .setSmeltTime(450)
                         .build();
-        BCLRecipeBuilder.alloying(BetterEnd.makeID("aeternium_ingot"), EndItems.AETERNIUM_INGOT)
-                        .setInput(EndBlocks.TERMINITE.ingot, Items.NETHERITE_INGOT)
-                        .setOutputCount(1)
-                        .setExperience(4.5F)
-                        .setSmeltTime(850)
-                        .build();
         BCLRecipeBuilder.alloying(BetterEnd.makeID("terminite_ingot_thallasium"), EndBlocks.TERMINITE.ingot)
                         .setInput(EndBlocks.THALLASIUM.ingot, EndItems.ENDER_DUST)
                         .setOutputCount(1)
