@@ -27,7 +27,6 @@ public class BetterEndClient implements ClientModInitializer {
         EndEntitiesRenders.register();
         MultiModelItem.register();
         ClientOptions.init();
-        registerTooltips();
 
         ResourceLocation checkFlowerId = new ResourceLocation("item/chorus_flower");
         ResourceLocation checkPlantId = new ResourceLocation("item/chorus_plant");
